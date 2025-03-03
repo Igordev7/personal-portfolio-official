@@ -55,7 +55,7 @@ export const Banner = () => {
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi, I'm Igor Almeida `}<span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'>{text}</span></h1>
                         <p>My name is Igor Almeida, and I am studying Computer Engineering at the University of the State of Amazonas (UEA). I am passionate about technology and have developed strong skills in programming languages like C++, Python, and Java, along with experience in software development, computer systems, hardware design, and networking. At UEA, I have gained both theoretical knowledge and practical experience, which has helped me grow as a versatile engineer. I am always looking for new opportunities to expand my skills and contribute to the tech industry with innovation and problem-solving.</p>
-                        <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
+                        <button  onClick={() => console.log('connect')}><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbFfdNmdpsBxftxrLGkZXskdcWlNjDBqBDJSwcCZGHGWsgMtlsswNjcfSThjqRjQBkvSvX">Contact-Me<ArrowRightCircle size={25}/></a></button>
                     </div>}
                         
                     </TrackVisibility>    
