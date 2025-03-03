@@ -35,7 +35,8 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>CSS, HTML, JavaScript, C, C++, Java, Python, TypeScript, React, Git and Github</p>
+                            <p>CSS, HTML, JavaScript, C, C++, Java, Python, TypeScript, React, Git and Github, 
+                            committed, Great Communication, TeamWork</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image"/>
