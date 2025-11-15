@@ -129,6 +129,38 @@ span.navbar-text {
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
+/* --- CORREÇÃO PARA CELULAR (NEWSLETTER) --- */
+@media (max-width: 767px) {
+  .newsletter-bx {
+    padding: 20px 15px; /* Mais espaço nas bordas */
+  }
+
+  .newsletter-bx h3 {
+    font-size: 18px; /* Diminui um pouco a letra */
+    margin-bottom: 20px;
+  }
+
+  .new-email-bx {
+    display: flex;
+    flex-direction: column; /* Faz o input ficar EM CIMA do botão */
+    background: transparent; /* Remove fundo branco se tiver */
+  }
+
+  .new-email-bx input {
+    width: 100%; /* Ocupa a largura toda */
+    margin-bottom: 10px; /* Espaço entre o input e o botão */
+    border-radius: 20px; /* Garante que fique redondinho */
+  }
+
+  .new-email-bx button {
+    width: 100%; /* Botão grande para facilitar o clique */
+    border-radius: 20px;
+    position: relative; /* Remove posicionamento absoluto se houver */
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
+}
 .social-icon a::before {
     content: "";
     width: 42px;
