@@ -35,8 +35,7 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>CSS, HTML, JavaScript, C, C++, Java, Python, TypeScript, React, Git and Github, 
-                            committed, Great Communication, TeamWork</p>
+                            <p>Kotlin, Java, Python, C++, C, React, HTML, CSS, JS, Node.JS</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image"/>
@@ -44,7 +43,7 @@ export const Skills = () => {
                                 </div>
                                 <div className="item">
                                     <img src={meter2} alt="Image"/>
-                                    <h5>Adaptative Work</h5>
+                                    <h5>IA</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter3} alt="Image"/>
@@ -52,7 +51,7 @@ export const Skills = () => {
                                 </div>
                                 <div className="item">
                                     <img src={meter1} alt="Image"/>
-                                    <h5>Commited</h5>
+                                    <h5>Data Science</h5>
                                 </div>
                             </Carousel>
                         </div>

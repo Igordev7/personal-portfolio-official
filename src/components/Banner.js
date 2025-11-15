@@ -6,7 +6,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
-    const toRotate = [" Software Engineer ", " Web Designer", " UI/UX Designer"];
+    const toRotate = [" Software Engineer ", " Web Designer", " UI/UX Designer", "Mobile Developer", "IA"];
     const [isDeleting, setIsDeleting] = useState(false);
     const [text,setText] = useState('');
     const period = 2000;
@@ -53,9 +53,11 @@ export const Banner = () => {
                     {({ isVisible }) =>
                     <div className={isVisible ? "animate-animated animate-fadeIn" : ""}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hi, I'm Igor Almeida `}<span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'>{text}</span></h1>
-                        <p>My name is Igor Almeida, and I am studying Computer Engineering at the University of the State of Amazonas (UEA). I am passionate about technology and have developed strong skills in programming languages like C++, Python, and Java, along with experience in software development, computer systems, hardware design, and networking. At UEA, I have gained both theoretical knowledge and practical experience, which has helped me grow as a versatile engineer. I am always looking for new opportunities to expand my skills and contribute to the tech industry with innovation and problem-solving.</p>
-                        <button  onClick={() => console.log('connect')}><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbFfdNmdpsBxftxrLGkZXskdcWlNjDBqBDJSwcCZGHGWsgMtlsswNjcfSThjqRjQBkvSvX">Contact-Me<ArrowRightCircle size={25}/></a></button>
+                        <h1>{`Hi, I'm Igor Almeida `}<span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ,"Data scientist", "Mobile Developer"]'>{text}</span></h1>
+                        <p>Hello! I'm Igor Almeida, a Computer Engineering student at UEA. I am an enthusiast of the limitless potential of computing, with a strong specialization in Artificial Intelligence and Data Science, specifically exploring the capabilities of LLMs.
+
+My technical toolkit is diverse: I develop robust Mobile Applications and have a strong background in Front-end development. I love bridging the gap between backend logic and visual creativity through Web Design, aiming to build complete and impactful digital products</p>
+                        <button  onClick={() => console.log('connect')}><a href="#contact">Contact-Me<ArrowRightCircle size={25} /></a></button>
                     </div>}
                         
                     </TrackVisibility>    

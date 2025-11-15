@@ -18,7 +18,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
   }
 
   const clearFields = () => {
-    setEmail('');
+    setEmail('igordev12ec@gmail.com');
   }
 
   return (

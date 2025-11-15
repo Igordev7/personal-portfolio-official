@@ -45,20 +45,20 @@ export const NavBar = () => {
                 </Nav>
                 <span className="navbar-text">
                     <div className="social-icon">
-                        <a href="https://www.linkedin.com/in/igor-almeida-36b7902b5/">
+                        <a href="https://www.linkedin.com/in/igor-almeida-36b7902b5/" target="_blank">
                             <img src={navIcon1} alt="Linkedin"/>
     
                         </a>
-                        <a href="https://github.com/Igordev7">
+                        <a href="https://github.com/Igordev7" target="_blank">
                             <img src={navIcon2} alt="Github"/>
     
                         </a>
-                        <a href="http://instagram.com/igu_almeida1">
+                        <a href="http://instagram.com/igu_almeida1" target="_blank">
                             <img src={navIcon3} alt="Instagram"/>
     
                         </a>
                     </div>
-                    <a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSDbFfdNmdpsBxftxrLGkZXskdcWlNjDBqBDJSwcCZGHGWsgMtlsswNjcfSThjqRjQBkvSvX"> 
+                    <a href="#contact"> 
 
                     <button className="vvd" onClick={() => console.log('connect')}>
                         <span>Contact-me</span> 

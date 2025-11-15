@@ -6,6 +6,7 @@ import {Banner} from './components/Banner';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Projects } from './components/Projects';
 import { Footer } from './components/Footer';
+import { Contact } from './components/Contact';
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <Banner />
       <Skills/>
       <Projects/>
+      <Contact />
       <Footer/>
     </div>
   );

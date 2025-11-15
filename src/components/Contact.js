@@ -23,28 +23,33 @@ export const Contact = () => {
       })
   }
 
-  const handleSubmit = async (e) => {
+ const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+    
+    // COLOQUE SEU LINK DO FORMSPREE AQUI EMBAIXO
+    let response = await fetch("https://formspree.io/f/xpwkdaoq", { 
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
+        "Accept": "application/json" // Adicione isso para garantir
       },
       body: JSON.stringify(formDetails),
     });
+    
     setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    
+    // O Formspree retorna 'ok' se der certo
+    if (response.ok) {
       setStatus({ succes: true, message: 'Message sent successfully'});
+      setFormDetails(formInitialDetails); // Limpa o formulário
     } else {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
     }
   };
 
   return (
-    <section className="contact" id="connect">
+    <section className="contact" id="contact">
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
